@@ -9,13 +9,14 @@ You've studied SQL multiple times and still don't feel confident. That happens f
 
 1. **The concept explained in plain English** (not jargon)
 2. **The syntax** (short and clean)
-3. **A real practice problem** using the Olist dataset you already have
+3. **A real practice problem** using the Olist dataset https://github.com/amoreiraj/SQL-Application-Design-Olist-
+   
 
-Work through one section per day. Write every query by hand — do not copy-paste. The act of typing it yourself is what builds confidence.
+Work through one section per day. Write every query by hand; do not copy-paste. The act of typing it yourself is what builds confidence.
 
 ---
 
-## Module 1 — Foundations (Days 1–3)
+## Module 1, Foundations (Days 1–3)
 
 ### Day 1: SELECT, WHERE, ORDER BY, LIMIT
 
@@ -56,7 +57,7 @@ LIMIT 5;
 
 ---
 
-### Day 2: Aggregate Functions — COUNT, SUM, AVG, MIN, MAX
+### Day 2: Aggregate Functions, COUNT, SUM, AVG, MIN, MAX
 
 **The concept:**
 Aggregates collapse many rows into one number. You always use them with GROUP BY (unless you want one number for the entire table).
@@ -102,7 +103,7 @@ ORDER BY avg_score ASC;
 
 ---
 
-### Day 3: HAVING vs WHERE — The Most Common Interview Mistake
+### Day 3: HAVING vs WHERE, The Most Common Interview Mistake
 
 **The concept:**
 - WHERE filters rows BEFORE grouping
@@ -158,12 +159,12 @@ ORDER BY avg_score ASC;
 
 ---
 
-## Module 2 — Joins (Days 4–6)
+## Module 2, Joins (Days 4–6)
 
-### Day 4: INNER JOIN — Only matching rows
+### Day 4: INNER JOIN, Only matching rows
 
 **The concept:**
-INNER JOIN returns rows that have a match in BOTH tables. If a row exists in table A but not table B — it disappears.
+INNER JOIN returns rows that have a match in BOTH tables. If a row exists in table A but not table B, it disappears.
 
 ```sql
 -- Orders with their customer state (only orders that have a matching customer)
@@ -185,7 +186,7 @@ Write a query showing each order's total payment value, alongside the customer's
 
 ---
 
-### Day 5: LEFT JOIN — Keep everything from the left table
+### Day 5: LEFT JOIN, Keep everything from the left table
 
 **The concept:**
 LEFT JOIN keeps ALL rows from the left table, even if there's no match in the right table. Where there's no match, you get NULL.
@@ -258,9 +259,9 @@ Write a query showing the top 5 sellers by total revenue. Include: seller_id, se
 
 ---
 
-## Module 3 — Subqueries & CTEs (Days 7–9)
+## Module 3, Subqueries & CTEs (Days 7–9)
 
-### Day 7: Subqueries — A query inside a query
+### Day 7: Subqueries, A query inside a query
 
 **The concept:**
 A subquery is just a SELECT inside another SELECT, FROM, or WHERE. Use it when you need to calculate something first before using it.
@@ -284,19 +285,19 @@ ORDER BY total_spent DESC;
 ```
 
 **Three places to use subqueries:**
-1. In FROM — treat the result as a temporary table (like above)
-2. In WHERE — filter based on a calculated value
-3. In SELECT — calculate a value per row (use sparingly, can be slow)
+1. In FROM, treat the result as a temporary table (like above)
+2. In WHERE, filter based on a calculated value
+3. In SELECT, calculate a value per row (use sparingly, can be slow)
 
 ---
 
-### Day 8: CTEs — The cleaner way to write complex queries
+### Day 8: CTEs, The cleaner way to write complex queries
 
 **The concept:**
 A CTE (Common Table Expression) does the same thing as a subquery but is much easier to read. You define it at the top with WITH, then use it like a table.
 
 ```sql
--- Same query as Day 7 but with a CTE — much cleaner
+-- Same query as Day 7 but with a CTE, much cleaner
 WITH customer_totals AS (
     SELECT 
         c.customer_unique_id,
@@ -328,10 +329,10 @@ Using a CTE, find the top 3 product categories by average review score, but only
 
 ---
 
-### Day 9: Window Functions — The most powerful SQL tool
+### Day 9: Window Functions, The most powerful SQL tool
 
 **The concept:**
-Window functions calculate a value across a set of rows related to the current row — without collapsing them like GROUP BY does. They use OVER().
+Window functions calculate a value across a set of rows related to the current row, without collapsing them like GROUP BY does. They use OVER().
 
 ```sql
 -- Rank sellers by revenue within each state
@@ -378,9 +379,9 @@ ORDER BY month;
 
 ---
 
-## Module 4 — Interview Preparation (Days 10–12)
+## Module 4, Interview Preparation (Days 10–12)
 
-### Day 10: CASE WHEN — Conditional logic in SQL
+### Day 10: CASE WHEN, Conditional logic in SQL
 
 ```sql
 -- Categorise orders by delivery performance
@@ -464,7 +465,7 @@ SELECT price FROM (
 
 ---
 
-### Day 12: Practice Interview — Answer These Out Loud
+### Day 12: Practice Interview, Answer These Out Loud
 
 Sit down, open MySQL Workbench, and answer each of these as if you are in an interview. No notes.
 
@@ -479,7 +480,7 @@ Sit down, open MySQL Workbench, and answer each of these as if you are in an int
 - Can I explain why I used JOIN vs LEFT JOIN here?
 - Can I explain what would happen if I removed the HAVING clause?
 
-If you can answer those three questions for every query you write — you are interview-ready.
+If you can answer those three questions for every query you write, you are interview-ready.
 
 ---
 
@@ -497,8 +498,8 @@ If you can answer those three questions for every query you write — you are in
 | 8 | CTEs | 1 hour |
 | 9 | Window functions | 1 hour |
 | 10 | CASE WHEN | 45 min |
-| 11 | Interview Q&A — read and memorise | 45 min |
-| 12 | Full mock interview — answer out loud | 1 hour |
+| 11 | Interview Q&A, read and memorise | 45 min |
+| 12 | Full mock interview, answer out loud | 1 hour |
 
 **Total: ~11 hours over 12 days**
 
