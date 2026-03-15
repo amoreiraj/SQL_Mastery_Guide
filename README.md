@@ -1,4 +1,6 @@
 # SQL Mastery Guide
+
+
 ### From "I've studied it before" to "I can answer any interview question"
 
 ---
@@ -17,6 +19,8 @@ Work through one section per day. Write every query by hand; do not copy-paste. 
 ---
 
 ## Module 1, Foundations (Days 1–3)
+
+
 
 ### Day 1: SELECT, WHERE, ORDER BY, LIMIT
 
