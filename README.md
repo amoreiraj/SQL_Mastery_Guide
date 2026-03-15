@@ -44,6 +44,9 @@ LIMIT 20;
 - ORDER BY ASC = smallest to largest, DESC = largest to smallest
 - LIMIT always goes last
 
+**output**
+
+
 **Your practice problem:**
 Write a query that shows the 5 most expensive single items ever ordered from the order_items table. Show: order_id, product_id, price. Order by price descending.
 
